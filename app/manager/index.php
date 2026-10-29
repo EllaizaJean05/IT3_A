@@ -21,7 +21,7 @@ if($section === 'students'){
         $students = $stmt->fetchAll();
 }
 
-// Create Student
+// Create Students
 if($section==='students' && $action==='create'){
     if($_SERVER['REQUEST_METHOD'] === 'POST'){
         $firstName = trim($_POST['student_first_name'] ?? '');
